@@ -9,6 +9,7 @@ let countdownInterval;
 //* function to start countdown
 btnStartEl.addEventListener("click", function () {
   if (inMinutesEl.value === "") inMinutesEl.value = "0";
+  if (inSecondsEl.value === "") inSecondsEl.value = "0";
   const inMinutes = parseInt(inMinutesEl.value);
   const inSeconds = parseInt(inSecondsEl.value);
   let totalSeconds = inMinutes * 60 + inSeconds;
